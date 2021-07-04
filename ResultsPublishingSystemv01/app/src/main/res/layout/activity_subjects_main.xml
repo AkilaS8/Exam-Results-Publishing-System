@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/subjects_main_layout"
+    android:background="@drawable/main_card_body"
+    tools:context=".Model.SubjectsMain">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/bgheader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/circle1"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_below="@+id/bgheader"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="220dp"
+        android:layout_marginRight="-63dp"
+        android:src="@drawable/circletransparant"
+        tools:ignore="UnknownId" />
+
+    <ImageView
+        android:id="@+id/circle2"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-10dp"
+        android:src="@drawable/login_screen" />
+
+    <ImageView
+        android:id="@+id/circle3"
+        android:layout_width="182dp"
+        android:layout_height="182dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="-80dp"
+        android:layout_marginBottom="-30dp"
+        android:src="@drawable/circle_view_2" />
+
+    <ImageView
+        android:id="@+id/circle4"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="-50dp"
+        android:layout_marginBottom="-50dp"
+        android:layout_toLeftOf="@+id/circle3"
+        android:src="@drawable/circletransparant" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="15dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sem1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:elevation="25dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="5dp"
+                app:cardCornerRadius="20dp">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginLeft="-50dp"
+                    android:layout_marginRight="-50dp"
+                    android:background="@drawable/sem1"/>
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_sub"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="75dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/name1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:padding="5dp"
+                        android:text="Year I Semester I"
+                        android:textSize="25sp"
+                        android:textColor="@color/colorWhite"/>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sem2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:elevation="25dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="5dp"
+                app:cardCornerRadius="20dp">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginLeft="-50dp"
+                    android:layout_marginRight="-50dp"
+                    android:background="@drawable/sem2"/>
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_sub"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="75dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/name2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:padding="5dp"
+                        android:text="Year I Semester II"
+                        android:textSize="25sp"
+                        android:textColor="@color/colorWhite"/>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sem3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:elevation="25dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="5dp"
+                app:cardCornerRadius="20dp">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginLeft="-50dp"
+                    android:layout_marginRight="-50dp"
+                    android:background="@drawable/sem3"/>
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_sub"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="75dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/name3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:padding="5dp"
+                        android:text="Year II Semester I"
+                        android:textSize="25sp"
+                        android:textColor="@color/colorWhite"/>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sem4"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:elevation="25dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="5dp"
+                app:cardCornerRadius="20dp">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginLeft="-50dp"
+                    android:layout_marginRight="-50dp"
+                    android:background="@drawable/sem4"/>
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_sub"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="75dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/name4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:padding="5dp"
+                        android:text="Year II Semester II"
+                        android:textSize="25sp"
+                        android:textColor="@color/colorWhite"/>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sem5"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:elevation="25dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="5dp"
+                app:cardCornerRadius="20dp">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginLeft="-50dp"
+                    android:layout_marginRight="-50dp"
+                    android:background="@drawable/sem5"/>
+                <ImageView
+                    android:id="@+id/img5"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_sub"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="75dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/name5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:padding="5dp"
+                        android:text="Year III Semester I"
+                        android:textSize="25sp"
+                        android:textColor="@color/colorWhite"/>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sem6"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="25dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="5dp"
+                app:cardCornerRadius="20dp">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginLeft="-50dp"
+                    android:layout_marginRight="-50dp"
+                    android:background="@drawable/sem6"/>
+                <ImageView
+                    android:id="@+id/img6"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_sub"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="75dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/name6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:padding="5dp"
+                        android:text="Year III Semester II"
+                        android:textSize="25sp"
+                        android:textColor="@color/colorWhite"/>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+   </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

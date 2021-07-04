@@ -1,0 +1,2 @@
+rootProject.name='Results Publishing System v01'
+include ':app'

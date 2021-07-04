@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Model.SplashScreen">
+    <ImageView
+        android:id="@+id/bb"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ss_back"
+        android:layout_above="@+id/tt"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/tt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="Exam Results Publishing System"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/ranking"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tt"
+        android:text="Department of Computer Science\nTrincomalee Campus - EUSL"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:fontFamily="@font/ranking"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Developed by Akila Ishan"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:textSize="13dp"
+        android:fontFamily="@font/ranking"/>
+
+
+</RelativeLayout>
